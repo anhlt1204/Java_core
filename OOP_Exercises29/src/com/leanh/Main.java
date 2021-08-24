@@ -1,5 +1,8 @@
 package com.leanh;
 
+/**
+ *  Sum Calculator
+ */
 public class Main {
 
     public static void main(String[] args) {
