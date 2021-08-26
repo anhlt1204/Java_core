@@ -36,6 +36,7 @@ public class Album {
     // Thêm bài hát vào playlist theo track
     public boolean addToPlayList(int track, LinkedList<Song> playlist) {
         if (track <= 0 || track > songs.songs.size()) {
+            System.out.println("This album does not have a track " + track);
             return false;
         }
         Song checkedSong = this.songs.findSong(track);
@@ -90,7 +91,6 @@ public class Album {
             if((index > 0) && (index<songs.size())) {
                 return songs.get(index);
             }
-            System.out.println("This album does not have a track " + track);
             return null;
         }
 
